@@ -13,7 +13,7 @@ def cropPic(img):
     ok, decoded_info, decoded_type, corners = bardet.detectAndDecode(img)
     #print(ok,decoded_info,decoded_type,corners)
     
-    minx,miny,maxx,maxy = 2000,2000,0,0;
+    minx,miny,maxx,maxy = 99999,99999,0,0;
     results  = []
     if (corners is None):
         return []
